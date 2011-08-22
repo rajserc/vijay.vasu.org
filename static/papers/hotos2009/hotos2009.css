@@ -1,0 +1,153 @@
+.li-itemize{margin:1ex 0ex;}
+.li-enumerate{margin:1ex 0ex;}
+.dd-description{margin:0ex 0ex 1ex 4ex;}
+.dt-description{margin:0ex;}
+.toc{list-style:none;}
+.thefootnotes{text-align:left;margin:0ex;}
+.dt-thefootnotes{margin:0em;}
+.dd-thefootnotes{margin:0em 0em 0em 2em;}
+.footnoterule{margin:1em auto 1em 0px;width:50%;}
+.caption{padding-left:2ex; padding-right:2ex; margin-left:auto; margin-right:auto}
+.title{margin:auto;text-align:center}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+.flushleft{text-align:left;margin-left:0ex;margin-right:auto;}
+.flushright{text-align:right;margin-left:auto;margin-right:0ex;}
+DIV TABLE{margin-left:inherit;margin-right:inherit;}
+PRE{text-align:left;margin-left:0ex;margin-right:auto;}
+BLOCKQUOTE{margin-left:4ex;margin-right:4ex;text-align:left;}
+TD P{margin:0px;}
+.boxed{border:1px solid black}
+.textboxed{border:1px solid black}
+.vbar{border:none;width:2px;background-color:black;}
+.hbar{border:none;height:2px;width:100%;background-color:black;}
+.hfill{border:none;height:1px;width:200%;background-color:black;}
+.vdisplay{border-collapse:separate;border-spacing:2px;width:auto; empty-cells:show; border:2px solid red;}
+.vdcell{white-space:nowrap;padding:0px;width:auto; border:2px solid green;}
+.display{border-collapse:separate;border-spacing:2px;width:auto; border:none;}
+.dcell{white-space:nowrap;padding:0px;width:auto; border:none;}
+.dcellsmall{white-space:nowrap;padding:0px;width:auto; border:none;font-size: 60%;}
+.dcenter{margin:0ex auto;}
+.vdcenter{border:solid #FF8000 2px; margin:0ex auto;}
+.minipage{text-align:left; margin-left:0em; margin-right:auto;}
+.marginpar{border:solid thin black; width:20%; text-align:left;}
+.marginparleft{float:left; margin-left:0ex; margin-right:1ex;}
+.marginparright{float:right; margin-left:1ex; margin-right:0ex;}
+.theorem{text-align:left;margin:1ex auto 1ex 0ex;}
+.part{margin:auto;text-align:center}
+p.authors, p.institutions {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: center;
+}
+p.authors { 
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+p.institutions {
+  margin-top: 0;
+  padding-top: 0;
+  font-style: italic;
+}
+
+ol.enumerate { 
+  text-align: left;
+}
+
+.titlemain {text-align: center;}
+
+div.equation {
+  margin-top: 1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.equation td { text-align: left; }
+table.equation td.dcell {  text-align: center; }
+
+div.figure {
+  margin-top: 1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.fig { 
+  padding-top: 2em;
+  text-align: center;
+}
+
+p.caption { 
+  font-weight: bold;
+  text-align: center;
+}
+
+
+div#abstract { margin: 1em 4em; }
+
+body { max-width: 1000px; margin-left:auto; margin-right: auto; }
+li { margin: 1ex 0ex; }
+hr.footnoterule{margin:1em auto 1em 0px;width:50%;}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+TABLE.spacer{border-spacing: 5ex 0pt;}
+div table {margin-left:inherit;margin-right:inherit;}
+PRE{text-align:left;margin-left:0ex;margin-right:auto;}
+hr {border: 0px; border-bottom: 1px solid;}
+blockquote.figure HR {border: 0px;}
+p { text-align:  justify; }
+table.border { 
+ border-collapse: collapse;
+ border-top: 2px solid;
+ border-bottom: 2px solid;
+ margin-left: auto;
+ margin-right: auto;
+}
+table.border td {
+ text-align: right;
+ padding-right: 3em;
+}
+th, td { padding-left: 0.5em; padding-right: 0.5em; padding-top: 2px; padding-bottom: 2px; }
+th {  border-bottom: 1px solid; }
+th.r {  text-align: right; }
+th.l {  text-align: left; }
+tr.bb {  border-bottom: 1px solid; }
+td.subhead { 
+ border-top: 1px solid; 
+ border-bottom: 1px solid; 
+ text-align: center; 
+ font-weight: bold;
+}
+td.r { 
+ text-align: right;
+}
+
+dl.footnotes, dl.refs { 
+ font-size: 80%;
+}
+
+dl.footnotes dt, dl.refs dt { 
+  display: block;
+  clear: left;
+  float: left;
+  width: 3em;
+}
+
+dl.refs dt { 
+  color: purple;
+}
+
+dl.footnotes dd, dl.refs dd { 
+  text-align: left;
+  clear: right;
+  margin-bottom: 1em;
+}
+
+div.citebaloon { 
+  max-width: 400px;
+  margin: 5px 5px;
+  padding: 5px;
+  background-color: #ffffaa;
+  display: none;
+  position: absolute;
+  border: 1px solid black;
+}

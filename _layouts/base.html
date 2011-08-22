@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <title>{{ page.title }}</title>
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-2" />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/pygment.css" rel="stylesheet" type="text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <!-- The Columnal Grid (1140px wide base, load first), Type and image presets, and mobile stylesheet -->
+    <link rel="stylesheet" href="/static/css/columnal.css" type="text/css" media="screen" />
+
+    <!-- Customizations --> 
+    <link rel="stylesheet" href="/static/css/custom.css" type="text/css" media="screen" />
+
+    <!-- Page build tools - only needed while creating a site, remove when launching - Gray box colors and page debugging tools -->
+    <link rel="stylesheet" href="/static/css/build.css" type="text/css" media="screen" />
+
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+
+{{ content }}
+
+</div>
+</div>
+
+
+<br/>
+<hr/>
+<div class="container">
+<div class="row">
+<div class="textcenter">
+Site designed using <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://www.columnal.com">Columnal</a>.
+</div>
+</div>
+</div>
+
+<!-- Begin Script for Google Analytics -->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-8478410-1");
+    pageTracker._trackPageview();
+} catch(err) {
+
+}
+</script>
+<!-- End Script for Google Analytics -->
+</body>
+</html>

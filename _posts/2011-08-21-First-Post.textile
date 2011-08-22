@@ -1,0 +1,10 @@
+---
+layout: post
+title: First Post
+---
+
+h1. {{ page.title }}
+
+Well, I've done it.  Using jekyll + s3cmd, I'm now running my static site entirely out of S3.   Also, props to columnal for making responsive css so easy to use.
+
+More later.

@@ -1,0 +1,250 @@
+---
+layout: base
+title: Vijay Vasudevan
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col_4 clearleft"><h2><a class="logo" href="#"><span>Vijay Vasudevan</span></a></h2></div>
+  </div>
+</div>
+
+
+<div class="container">
+<div class="row">
+    <div class="col_4 clearleft" >
+	<img class="mobile-hide" src="/static/images/vijay-sketch-color.jpg" title="courtesy of Beverly Wang - http://www.pinjing.net" alt="IllustratedSketch"/>
+    </div>
+
+    <div class="col_8 omega">
+	Graduate Student <br/>
+	Computer Science Dept. <br/>
+	<strong>Carnegie Mellon University</strong> <br/>
+	GHC6221 <br/>
+	email: <strong><a class="email" href="http://mailhide.recaptcha.net/d?k=01bdCXLeM-BcaAbye34EOBfw==&amp;c=In4TRzP3XxqdTPAry7wUbg==" onclick="window.open('http://mailhide.recaptcha.net/d?k=01bdCXLeM-BcaAbye34EOBfw==&amp;c=In4TRzP3XxqdTPAry7wUbg==', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">click</a></strong> 
+	or 
+	<a class="email" href="username: vrv+www">make</a>
+	<a class="email" href="sign: @">an</a>
+	<a class="email" href="subdomain: cs">educated</a>
+	<a class="email" href="domain: cmu.edu">guess</a>
+    </div>
+
+</div>
+</div>
+
+<br/>
+<div class="container">
+  <div class="row">
+    <div class="col_12">
+      I am a Ph.D candidate (expected 2011 graduation) in the
+      Computer Science Department at Carnegie Mellon University,
+      advised by <a href="http://www.cs.cmu.edu/~dga/">Professor David
+      Andersen</a>.  My interests span topics in networked
+      computer systems, including low-power cluster systems,
+      datacenter networking, and Internet measurement.
+      <br /><br/>
+      In this winter (man, <a href="http://www.youtube.com/watch?v=RTeCc8jy7FI">this</a> is very tough), I'm going to
+      take my talents to South Bay and join Google.
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col_12 title">
+    <h2>Notes</h2>
+  </div>
+  <div class="col_12">
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>
+
+  <div class="row">
+    <section id="projects">
+      <br/>
+      <div class="col_12 title">
+	<h2> Projects </h2>
+      </div>
+      <div class="col_12">
+	First, see <a href="http://www.github.com/vrv/" onclick="javascript: pageTracker._trackPageview('github');">my GitHub</a>.  Code from some of my projects can be found there.
+
+	<ul>
+	  <li><a href="http://www.cs.cmu.edu/~fawnproj">FAWN: Fast Array of Wimpy Nodes</a></li>
+	  <li><a href="http://www.pdl.cmu.edu/Incast/">Incast: TCP Throughput Collapse in Cluster-based Storage Systems</a>.</li>
+	  <li><a href="swamp.html">Simple Wide-Area Multi-Path (SWAMP)</a></li>
+	</ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="row">
+    <section id="pubs">
+      <br/>
+      <div class="col_12">
+	<h2>Refereed Publications</h2>
+	<ul>
+	  <li>
+	    <b>The Case for VOS: The Vector Operating System</b>. [<a href="/static/papers/vos-hotos2011.pdf" onclick="javascript: pageTracker._trackPageview('papers/vos-hotos2011');">pdf</a>]  <i>(One of eight papers to contain the term "Operating System" in the title)</i>
+	    <br/>Vijay Vasudevan, David G. Andersen, Michael Kaminsky
+	    <br/>In <i>13th Workshop on Hot Topics in Operating Systems (HotOS 2011)</i>.  May 2011.
+	  </li>
+
+
+	  <li>
+	    <b>FAWN: A Fast Array of Wimpy Nodes</b>. [<a href="/static/papers/fawn-sosp2009.pdf" onclick="javascript: pageTracker._trackPageview('papers/fawn-sosp2009');">pdf</a>]  <i>(Received Best Paper award)</i>
+	    <br/>David G. Andersen, Jason Franklin, Michael Kaminsky, Amar Phanishayee, Lawrence Tan, Vijay Vasudevan 
+	    <br/>In <i>22nd ACM Symposium on Operating Systems Principles (SOSP 2009)</i>. October 2009.  
+	  </li>
+
+	  <li>
+	    <b>Safe and Effective Fine-grained TCP Retransmissions for Datacenter Communication</b>. [<a href="/static/papers/sigcomm147-vasudevan.pdf" onclick="javascript: pageTracker._trackPageview('/papers/incastsigcomm');">pdf</a>, Slides: <a href="/static/talks/Incast_SIGCOMM2009_talk.pdf">.pdf</a> <a href="/static/talks/Incast_SIGCOMM2009_talk.key">.key</a>]
+	    <br/>Vijay Vasudevan, Amar Phanishayee, Hiral Shah, Elie Krevat, David Andersen, Greg Ganger, Garth Gibson, Brian Mueller 
+	    <br/>In <i>ACM SIGCOMM</i>. August 2009.
+	  </li>
+
+	  <li>
+	    <b>FAWNdamentally Power-efficient Clusters</b>. [<a href="/static/papers/hotos2009.pdf" onclick="javascript: pageTracker._trackPageview('/papers/fawndamentals');">pdf</a>, <a href="/static/papers/hotos2009/" onclick="javascript: pageTracker._trackPageview('/papers/fawndamentals_html');">html</a>]
+	    <br/>Vijay Vasudevan, Jason Franklin, David Andersen, Amar Phanishayee, Lawrence Tan, Michael Kaminsky, Iulian Moraru 
+	    <br/>In <i>12th Workshop on Hot Topics in Operating Systems (HotOS XII)</i>.  May 2009.
+	  </li>
+
+	  <li>
+	    <b>A First Look at Media Conferencing Traffic in the Global Enterprise</b>. [<a href="http://pam2009.kaist.ac.kr/paper/54480133.pdf" onclick="javascript: pageTracker._trackPageview('/papers/pam2009');">pdf</a>]
+	    <br/>Vijay Vasudevan, Sudipta Sengupta, Jin Li 
+	    <br/>In <i>Proceedings of Passive and Active Measurement Conference (PAM)</i>.  April 2009.
+	  </li>
+
+	  <li>
+	    <b>Measurement and Analysis of TCP Throughput Collapse in Cluster-Based Storage 
+	    Systems</b>. [<a href="/static/papers/FASTIncast.pdf" onclick="javascript: pageTracker._trackPageview('/papers/FASTIncast');">pdf</a>, <a href="http://www.cs.cmu.edu/~amarp/papers/html/Incast_FAST_2008/FASTIncast.html" onclick="javascript: pageTracker._trackPageview('/papers/FASTIncast_html');">html</a>]
+	    <br/>Amar Phanishayee, Elie Krevat, Vijay Vasudevan, David Andersen, Gregory 
+	    Ganger, Garth Gibson, Srinivasan Seshan. 
+	    <br/>In <i>Proceedings of File and Storage Technologies (FAST)</i>.  February 2008.
+	  </li>
+	  
+	  <li>
+	    <b>On Application-level Approaches to Avoiding TCP Throughput Collapse in Cluster-Based Storage Systems</b>.  [<a href="/static/papers/PDSI07-Incast.pdf" onclick="javascript: pageTracker._trackPageview('/papers/PDSWIncast');">pdf</a>] 
+	    <br/>Elie Krevat, Vijay Vasudevan, Amar Phanishayee, David Andersen, Gregory Ganger, Garth Gibson, Srinivasan Seshan. 
+	    <br/>In <i>Proceedings of Petascale Data Storage Workshop, Supercomputing</i>.  November 2007.	
+	  </li>
+
+	</ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col_12">
+	<h2>Other Articles</h2>
+	<ul>
+	  <li>
+	    <b>FAWN: A Fast Array of Wimpy Nodes</b>. 
+	    [<a href="http://cacm.acm.org/magazines/2011/7/109902-fawn/pdf?dl=no" 
+	    onclick="javascript: pageTracker._trackPageview('papers/cacm2011');">CACM link</a>, 
+	    <a href="http://cacm.acm.org/magazines/2011/7/109904-technical-perspective-fawn/pdf?dl=no">Luiz Andre Barroso's Perspective</a>]
+	    <br/>
+	    David G. Andersen, Jason Franklin, Michael Kaminsky, Amar Phanishayee, Lawrence Tan, and Vijay Vasudevan
+	    <br/>
+	    In <i>Communications of the ACM</i>, July 2011.
+	    <br/>
+
+	  </li>
+
+	  <li>
+	    <b>FAWNSort: Energy-efficient Sorting of 10GB 2011</b>. [<a href="http://sortbenchmark.org/fawnsort_2011.pdf" onclick="javascript: pageTracker._trackPageview('papers/fawnsort2011');">pdf</a>]
+	    <br/>
+	    Padmanabhan Pillai, Michael Kaminsky, Michael A. Kozuch, Vijay Vasudevan, Lawrence Tan, David Andersen
+	    <br/>
+	    Winner of 2011 10GB Joulesort Competition.
+	  </li>
+
+	  <li>
+	    <b>Challenges and Opportunities for Efficient Computing with FAWN</b>. 
+	    [<a href="/static/papers/fawn-osr2011.pdf"
+	    onclick="javascript: pageTracker._trackPageview('/papers/osr2011');">pdf</a>]
+	    <br/>
+	    Vijay Vasudevan, David G. Andersen, Michael Kaminsky, Jason Franklin, Michael A. Kozuch, Iulian Moraru, Padmanabhan Pillai, Lawrence Tan
+	    <br/>
+	    In <i>Operating Systems Review</i>, January 2011.
+	    <br/>
+
+	  </li>
+
+	  <li>
+	    <b>FAWNSort: Energy-efficient Sorting of 10GB 2010</b>. [<a href="http://sortbenchmark.org/fawnsort_2010.pdf" onclick="javascript: pageTracker._trackPageview('papers/fawnsort2010');">pdf</a>]
+	    <br/>
+	    Vijay Vasudevan, Lawrence Tan, David Andersen, Michael Kaminsky, Michael A. Kozuch, Padmanabhan Pillai
+	    <br/>
+	    Winner of 2010 10GB Joulesort Competition.
+	  </li>
+
+	  <li>
+	    <b>Energy-Efficient Cluster Computing with FAWN: Workloads and Implications</b>. [<a href="/static/papers/fawn-eenergy2010.pdf" onclick="javascript: pageTracker._trackPageview('papers/fawn-eenergy2010');">pdf</a>] (Invited Paper)
+	    <br/>
+	    Vijay Vasudevan, David Andersen, Michael Kaminsky, Lawrence Tan, Jason Franklin, Iulian Moraru
+	    <br/>
+	    In <i>Proceedings of 1st International Conference on Energy-Efficient Computing and Networking (e-Energy 2010)</i>, April 2010.
+	  </li>
+
+	  <li>
+	    <b>On Internet Availability: Where Does Path Choice Matter?</b> [<a href="/static/papers/tech_reports/CMU-CS-09-114-TR.pdf" onclick="javascript: pageTracker._trackPageview('/papers/pathchoiceTR');">pdf</a>] 
+	    <br/>
+	    Vijay Vasudevan, David Andersen, Hui Zhang
+	    <br/>
+	    CMU CS Tech Report: CMU-CS-09-114
+	  </li>
+
+	  <li>
+	    <b>Understanding the AS-level Path Disjointness Provided by Multi-Homing</b>. [<a href="/static/papers/tech_reports/vrv-ASMultihomingStudy.pdf" onclick="javascript: pageTracker._trackPageview('/papers/SWAMP_TR_1');">pdf</a>] 
+	    <br/>
+	    Vijay Vasudevan, David G. Andersen, Hui Zhang
+	    <br/>
+	    CMU CS Tech Report: CMU-CS-07-141
+	  </li>
+	</ul>
+      </div>
+      
+    </section>
+  </div>
+  
+  
+  <div class="row">  
+    <section id="misc">
+      <br/>
+      <div class="col_6 clearleft">
+	<h2>Past Projects</h2>
+	As an undergraduate at Berkeley, I worked on two projects in <a href="http://goldberg.berkeley.edu">Ken Goldberg</a>'s <a href="http://automation.berkeley.edu">Berkeley Automation Lab</a>.  Specifically, I was the network engineer on the <a href="http://goldberg.berkeley.edu/art/Ballet-Mori/">Ballet Mori</a> project and also worked on physical deformation simulations for <a href="http://www.cs.unc.edu/~ron/research/NeedleSim/">needle surgery planning</a>.  
+    
+	I also worked on DDoS prevention in next generation Internet architectures and implemented ConeNAT functionality within the <a href="http:///ocala.cs.berkeley.edu">OCALA</a> framework.  
+      </div>
+
+      <div class="col_6 omega">
+	  <h2>Friends</h2>
+	  <div class="row">
+	    <div class="col_6 clearleft">
+	      <h3>CMU</h3>
+	      <ul>
+		<li><a href="http://www.cs.cmu.edu/~dbrumley/">David Brumley</a>
+		</li><li><a href="http://www.cs.cmu.edu/~jfrankli">Jason Franklin</a>
+		</li><li><a href="http://www.cs.cmu.edu/~jganetsk/">Jason Ganetsky</a>
+		</li><li><a href="http://www.cs.cmu.edu/~svp/">Swapnil Patil</a>
+		</li><li><a href="http://www.cs.cmu.edu/~amarp/">Amar Phanishayee</a>
+		</li><li><a href="http://www.cs.cmu.edu/~ktangwon/">Kanat Tangwongsan</a>
+		</li><li><a href="http://www.cs.cmu.edu/~dwendlan/">Dan Wendlandt</a>
+		</li><li><a href="http://www.cs.cmu.edu/~bmm/">Bruce Maggs</a></li>
+	      </ul>
+	    </div>
+	    <div class="col_6 omega">
+	      <h3>Elsewhere</h3>
+	      <ul>
+		<li><a href="http://www.pinjing.net">Beverly Wang</a>
+		</li><li><a href="http://math.berkeley.edu/~kevin/">Kevin Lin</a>
+		</li><li><a href="http://people.csail.mit.edu/cyc/">Chris Crutchfield</a>
+		</li><li><a href="http://decision.csl.uiuc.edu/~rgregg/">Robert D. Gregg</a></li>
+	      </ul>
+	    </div>
+	  </div>
+      </div>
+    </section>
+  </div>
+</div>
