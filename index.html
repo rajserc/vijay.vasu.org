@@ -11,24 +11,18 @@ title: Vijay Vasudevan
 
 
 <div class="container">
-<div class="row">
+  <div class="row">
     <div class="col_4 clearleft" >
 	<img class="mobile-hide" src="/static/images/vijay-sketch-color.jpg" title="courtesy of Beverly Wang - http://www.pinjing.net" alt="IllustratedSketch"/>
     </div>
 
     <div class="col_8 omega">
-	Computer Science Dept. <br/>
-	<strong>Carnegie Mellon University</strong> <br/>
-	GHC6221 <br/>
-	email: <strong><a class="email" href="http://mailhide.recaptcha.net/d?k=01bdCXLeM-BcaAbye34EOBfw==&amp;c=In4TRzP3XxqdTPAry7wUbg==" onclick="window.open('http://mailhide.recaptcha.net/d?k=01bdCXLeM-BcaAbye34EOBfw==&amp;c=In4TRzP3XxqdTPAry7wUbg==', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">click</a></strong> 
-	or 
-	<a class="email" href="username: vrv+www">make</a>
-	<a class="email" href="sign: @">an</a>
-	<a class="email" href="subdomain: cs">educated</a>
-	<a class="email" href="domain: cmu.edu">guess</a>
+	Software Engineer at Google <br/>
+	email: <strong>
+	<a class="email" href="http://www.google.com/recaptcha/mailhide/d?k=01rP_AhaCYQXEZiBTSkJN9VA==&amp;c=S65OoxZq-YmM_g57C1XTLw==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501rP_AhaCYQXEZiBTSkJN9VA\75\75\46c\75S65OoxZq-YmM_g57C1XTLw\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">(click to reveal)</a>@vasu.org
+	</strong>
     </div>
-
-</div>
+  </div>
 </div>
 
 <br/>
@@ -41,32 +35,31 @@ title: Vijay Vasudevan
       computer systems, including low-power cluster systems,
       datacenter networking, and Internet measurement.
       <br /><br/>
-      I am now at Google in Mountain View.
+      I now work on Storage Systems at Google in Mountain View.
     </div>
   </div>
 
-<div class="row">
-  <div class="col_12 title">
-    <h2>Notes</h2>
+  <div class="row">
+    <div class="col_12 title">
+      <h2>Notes</h2>
+    </div>
+    <div class="col_12">
+      <ul class="posts">
+	{% for post in site.posts %}
+	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+      </ul>
+    </div>
   </div>
-  <div class="col_12">
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  </div>
-</div>
 
   <div class="row">
     <section id="projects">
-      <br/>
       <div class="col_12 title">
 	<h2> Projects </h2>
       </div>
       <div class="col_12">
 	First, see <a href="http://www.github.com/vrv/" onclick="_gaq.push(['_trackPageview', 'github']);">my GitHub</a>.  Code from some of my projects can be found there.
-
+	
 	<ul>
 	  <li><a href="http://www.cs.cmu.edu/~fawnproj">FAWN: Fast Array of Wimpy Nodes</a></li>
 	  <li><a href="http://www.pdl.cmu.edu/Incast/">Incast: TCP Throughput Collapse in Cluster-based Storage Systems</a>. <a href="static/incast/incast_1.1.tar.gz">incast simulation code</a></li>
@@ -78,10 +71,15 @@ title: Vijay Vasudevan
 
   <div class="row">
     <section id="pubs">
-      <br/>
       <div class="col_12">
 	<h2>Refereed Publications</h2>
 	<ul>
+	  <li>
+	    <b>Using Vector Interfaces to Deliver Millions of IOPS from a Key-Value Storage Server</b>. [<a href="/static/papers/vector-socc2012-single.pdf" onclick="_gaq.push(['_trackPageview', 'papers/vector-socc2012-single']);">single-column pdf</a>, <a href="/static/papers/vector-socc2012-double.pdf" onclick="_gaq.push(['_trackPageview', 'papers/vector-socc2012-double']);">double-column pdf</a>]
+	    <br/>Vijay Vasudevan, Michael Kaminsky, David G. Andersen
+	    <br/>In <i>3rd ACM Symposium on Cloud Computing (SOCC 2012)</i>.  Oct 2012.
+	  </li>
+
 	  <li>
 	    <b>The Case for VOS: The Vector Operating System</b>. [<a href="/static/papers/vos-hotos2011.pdf" onclick="_gaq.push(['_trackPageview', 'papers/vos-hotos2011']);">pdf</a>]  <i>(One of eight papers to contain the term "Operating System" in the title)</i>
 	    <br/>Vijay Vasudevan, David G. Andersen, Michael Kaminsky
@@ -129,8 +127,11 @@ title: Vijay Vasudevan
 
 	</ul>
       </div>
-    </div>
-    <div class="row">
+    </section>
+  </div>
+
+  <div class="row">
+    <section id="articles">
       <div class="col_12">
 	<h2>Other Articles</h2>
 	<ul>
@@ -212,10 +213,8 @@ title: Vijay Vasudevan
 	  </li>
 	</ul>
       </div>
-      
     </section>
   </div>
-  
   
   <div class="row">  
     <section id="misc">
@@ -223,7 +222,7 @@ title: Vijay Vasudevan
       <div class="col_12 clearleft">
 	<h2>Past Projects</h2>
 	As an undergraduate at Berkeley, I worked on two projects in <a href="http://goldberg.berkeley.edu">Ken Goldberg</a>'s <a href="http://automation.berkeley.edu">Berkeley Automation Lab</a>.  Specifically, I was the network engineer on the <a href="http://goldberg.berkeley.edu/art/Ballet-Mori/">Ballet Mori</a> project and also worked on physical deformation simulations for <a href="http://www.cs.unc.edu/~ron/research/NeedleSim/">needle surgery planning</a>.  
-    
+	
 	I also worked on DDoS prevention in next generation Internet architectures and implemented ConeNAT functionality within the <a href="http:///ocala.cs.berkeley.edu">OCALA</a> framework.  
       </div>
 
